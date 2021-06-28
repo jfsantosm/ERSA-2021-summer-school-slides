@@ -2,7 +2,7 @@
 title: "The Effect of Conditional Cash Transfer Policies on Regional Crime Levels:"
 subtitle: "Evidence from a Synthetic Controls Framework"
 author: "Felipe Santos-Marquez<br />https://felipe-santos.rbind.io<br /><br />Research Assistant / PhD Student <br />Chair of International Economics<br />Technische Universität Dresden<br /> Germany"
-date: "Prepared for the 2021 34th ERSA Summer School"
+date: "Prepared for the 2021 34th ERSA Summer School  <br /><br /> [slides available at:  https://ersa-felipe-santos.netlify.app]"
 output:
   xaringan::moon_reader:
     lib_dir: libs
