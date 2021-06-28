@@ -73,7 +73,7 @@ style_duo(
 
 - Which are determinants of homicide rates for Colombian municipalities?
 
-- **To what extent the coverage of  conditional cash transfer program in Colombia may affect homicide rates?**. 
+- **To what extent the coverage of  conditional cash transfer program in Colombia (the pacific region of Colombia) may affect homicide rates?**. 
 
 --
 
@@ -102,7 +102,7 @@ class: middle, highlight-last-item
 ## Main Results:
 
 
-1.  15 variables are found to be important determinants of homicide levels. They are related to **crime, inequality, drug-trafficking, conflict and literacy**
+1.  15 variables are found to be important determinants of homicide levels. They are related to **crime, inequality, drug-trafficking, conflict and literacy**.
 
 
 --
@@ -111,7 +111,7 @@ class: middle, highlight-last-item
 
 --
 
-3.  It was reported that by 2018, the average homicide rate were lower for high CCTs coverage municipalities when compared to synthetic copies made out of a pool of low coverage municipalities.
+3.  It was reported that by 2018, **the average homicide rates were lower for high CCTs coverage municipalities** when compared to synthetic controls  ("copies" made out of a pool of low CCT coverage municipalities).
 
 
 ---
@@ -153,10 +153,17 @@ class:
 ### Bayesian Model Averaging BMA - methods and results:
 
 $$y=\alpha_{i}+X_{i} \beta_{i}+\varepsilon, \quad \varepsilon \sim N\left(0, \sigma^{2} I\right)$$ 
- 
-- how can researchers select just a handful of determinants? 
-- how to evaluate the importance of the inclusion of specific determinants in the model?
+--
+
+- **how can researchers select just a handful of determinants?** 
+--
+
+- **how to evaluate the importance of the inclusion of specific determinants in the model?**
+--
+
 - Bayesian Model Averaging (BMA) methods attempt to overcome these problems by estimating linear models for all (**MANY**) possible combinations of determinants $X_{i}$
+--
+
 
 
 .pull-left[ <img src="figs/bma.jpg" style="width:100%"/>
@@ -197,10 +204,10 @@ The weights are found so that the synthetic municipality has a similar crime tre
 class: center
 ##  Results: Synthetic control methods
 
-.pull-left[ $$high-CCT-coverage > 70\%$$
+.pull-left[ **$$high-CCT-coverage > 70\%$$**
 ]
 
-.pull-right[  $$low-CCT-coverage < 30\%$$
+.pull-right[ ** $$low-CCT-coverage < 30\%$$**
 ]
 
 --
@@ -210,23 +217,27 @@ class: center
 
 ---
 class:  center
-# The effect of CCTs on crime 
+# The effect of CCTs on crime
+--
+
 .pull-left[
 
 **Crime gaps for treatment municipalities and control placebos**
 <img src="figs/gaps.png" style="width: 105%" />
 ]
+--
 
 .pull-right[
 **Overall effects = the gap in 2018 / Root mean squared predicted error**
 ![](figs/gaps2.png)
 
 ]
+--
 
-## A t-test shows that the mean effect is statistically lower for the treatment group.
+## A t-test shows that the mean effect (lower crime) is statistically lower for the treatment group.
 
 --
-The results of the synthetic controls methods are fully reproducible. You can create a virtual computer on the following link 
+The results of the synthetic controls methods are fully reproducible. 
 https://github.com/quarcs-lab/Tutorial-synthetic-control-methods-Felipe-thesis-chapter5  
 
 ---
@@ -234,7 +245,7 @@ class: highlight-last-item
 
 ### Concluding Remarks
 
-- Supporting previous studies, **inequality, literacy rates, previous crime levels, institutional capabilities, conflict and drug-trafficking** related variables were reported as significant determinants of homicide rates.
+- Supporting previous studies, variables related to **inequality, literacy rates, previous crime levels, institutional capabilities, conflict and drug-trafficking**  were reported as significant determinants of homicide rates.
 --
 
 - By 2018, **the average homicide rates were lower for high CCT coverage municipalities** when compared to synthetic copies made out of a pool of low CCT coverage municipalities.
@@ -243,7 +254,7 @@ class: highlight-last-item
 
 ### Implications
 
-- CCT programs appear to be comprehensive policies can tackle multiple issues such as **poverty, education and violence**.
+- CCT programs appear to be comprehensive policies as thez can tackle multiple issues such as **poverty, low education outcomes and violence**.
 --
 
 - Given funding constraints, it seems that investing in the expansion of this policy in the Pacific region can be an effective ways to improve developmental outcomes in several areas.
@@ -252,9 +263,7 @@ class: highlight-last-item
 - The framework of this paper can be considered a **data science framework to test the impact of regional policies**
 
 $$BMA \rightarrow  \space determinants \space  of\space Y \rightarrow  Synethetic \space Controls \rightarrow The \space impact \space of \space  X \space on \space Y  $$
---
 
-- **How can we integrate spatial effects and Synthetic Controls?** Spatial filtering? 
 
 
 ---
@@ -269,12 +278,19 @@ class: middle, highlight-last-item
 - A dataset of determinants of crime based on previous literature (instead of the determinants found with the BMA) can be assembled.  **This new dataset can be used as the input for the synthetic control analysis.**
 --
 
+- **How can we integrate spatial effects and Synthetic Controls?**
+Spatial filtering? 
+Adding a distance indicator as one of the determinants in the Synthetic Controls framework?
+
 ---
 
 
 class: center, middle
 
 # Thank you very much for your attention
+personal website: https://felipe-santos.rbind.io
+
+slides available at:  https://ersa-felipe-santos.netlify.app
 
 .pull-left[
 ![](figs/QuaRCS-lab-logo2.png)
