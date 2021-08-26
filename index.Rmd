@@ -2,7 +2,7 @@
 title: "The Effect of Conditional Cash Transfer Policies on Regional Crime Levels:"
 subtitle: "Evidence from a Synthetic Controls Framework"
 author: "Felipe Santos-Marquez<br />https://felipe-santos.rbind.io<br /><br />Research Assistant / PhD Student <br />Chair of International Economics<br />Technische Universität Dresden<br /> Germany"
-date: "Prepared for the 2021 34th ERSA Summer School  <br /><br /> [slides available at:  https://ersa-felipe-santos.netlify.app]"
+date: "Prepared for the 2021 60th ERSA Congress <br /><br /> Special session S43:Counterfactual methods for regional policy evaluation<br /><br /> [slides available at:  https://ersa-felipe-santos.netlify.app]"
 output:
   xaringan::moon_reader:
     lib_dir: libs
@@ -112,6 +112,13 @@ class: middle, highlight-last-item
 
 - It was reported that by 2018, **the average homicide rates were lower for high CCTs coverage municipalities** when compared to synthetic controls  ("copies" made out of a pool of low CCT coverage municipalities).
 
+---
+# The counterfactual methodology for policy evaluation in one figure
+
+--
+<img src="figs/flowchart.png" style="width:100%"/>
+--
+$$BMA \rightarrow  \space determinants \space  of\space Y \rightarrow  Synethetic \space Controls \rightarrow The \space impact \space of \space  X \space on \space Y  $$
 
 ---
 class: middle, highlight-last-item
@@ -244,6 +251,25 @@ class:  center
 The results of the synthetic controls methods are fully reproducible. 
 https://github.com/quarcs-lab/Tutorial-synthetic-control-methods-Felipe-thesis-chapter5  
 
+
+---
+class:  center
+## Sensitivity analysis: Policy coverage threshold
+
+<img src="figs/sens1.png" style="width:100%"/>
+
+---
+class:  middle
+# Sensitivity analysis: in-time placebos
+
+<img src="figs/sens2.png" style="width:100%"/>
+
+- If the time of treatment is changed the effect becomes **consistently not significant**.
+
+- For instance, the p-values become larger than 0.1 if the treatment is assigned in **2008, 2006 or 2004**.
+
+
+
 ---
 class: highlight-last-item
 
@@ -258,7 +284,7 @@ class: highlight-last-item
 
 ### Implications
 
-- CCT programs appear to be comprehensive policies as thez can tackle multiple issues such as **poverty, low education outcomes and violence**.
+- CCT programs appear to be comprehensive policies as they can tackle multiple issues such as **poverty, low education outcomes and violence**.
 --
 
 - Given funding constraints, it seems that investing in the expansion of this policy in the Pacific region can be an effective ways to improve developmental outcomes in several areas.
@@ -274,9 +300,6 @@ $$BMA \rightarrow  \space determinants \space  of\space Y \rightarrow  Synetheti
 class: middle, highlight-last-item
 
 ### Further research
-
-- The robustness of the result can be tested by changing the thresholds for low and high CCT coverage.  Instead of 30%  and 70%, one can use thresholds such as **20%-80% and 25%-75%**.
---
 
 
 - A dataset of determinants of crime based on previous literature (instead of the determinants found with the BMA) can be assembled.  **This new dataset can be used as the input for the synthetic control analysis.**
