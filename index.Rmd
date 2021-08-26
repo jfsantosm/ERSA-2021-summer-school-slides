@@ -158,6 +158,11 @@ Author’s calculations using data from the WDI World Bank (2020))
 ]
 
 ---
+# Conditional Cash Transfers (CCTs) over time:
+
+<img src="figs/urrutia.png" style="width:100%"/>
+Figure taken from (Urrutia and Robles, 2018)
+---
 
 class: 
 
